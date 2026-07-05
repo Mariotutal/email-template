@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Radar</title>
+  <style>
+    body{margin:0!important;padding:0!important;background:#eef2f7;color:#172033;font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;}
+    a{color:#2563eb;}
+    .preheader{display:none!important;visibility:hidden;opacity:0;color:transparent;height:0;width:0;overflow:hidden;mso-hide:all;}
+    .outer{width:100%;background:#eef2f7;padding:0;}
+    .container{width:100%;max-width:560px;margin:0 auto;background:#ffffff;}
+    .hero{background:#111827;color:#ffffff;padding:24px 18px 22px 18px;}
+    .eyebrow{margin:0 0 10px 0;font-size:11px;line-height:1.4;letter-spacing:1.4px;text-transform:uppercase;color:#a7f3d0;font-weight:700;}
+    .hero h1{margin:0;font-size:27px;line-height:1.14;font-weight:800;}
+    .hero p{margin:12px 0 0 0;font-size:16px;line-height:1.5;color:#d1d5db;}
+    .meta{background:#e0f2fe;padding:14px 18px;font-size:13px;line-height:1.55;color:#0f172a;border-bottom:1px solid #bae6fd;}
+    .content{padding:20px 14px 26px 14px;}
+    .label{margin:0 0 8px 0;font-size:11px;line-height:1.4;letter-spacing:1.2px;text-transform:uppercase;color:#2563eb;font-weight:700;}
+    .lead{margin:0 0 16px 0;font-size:17px;line-height:1.55;color:#243044;}
+    .quick{background:#f8fafc;border:1px solid #dbe4ef;border-radius:14px;padding:15px;margin:0 0 18px 0;}
+    .quick h2{margin:0 0 10px 0;font-size:16px;line-height:1.3;color:#111827;}
+    .quick-item{padding:10px 0;border-top:1px solid #dbe4ef;}
+    .quick-item:first-of-type{border-top:0;padding-top:0;}
+    .quick-number{display:inline-block;width:24px;height:24px;border-radius:50%;background:#2563eb;color:#ffffff;text-align:center;line-height:24px;font-size:12px;font-weight:700;margin-right:7px;}
+    .quick-title{font-weight:700;font-size:15px;line-height:1.45;color:#111827;}
+    .quick-desc{margin:5px 0 0 31px;font-size:14px;line-height:1.45;color:#4b5563;}
+    .card{background:#ffffff;border:1px solid #dbe4ef;border-radius:16px;overflow:hidden;margin:0 0 18px 0;}
+    .card-top{padding:18px 16px 15px 16px;border-bottom:1px solid #e5e7eb;background:#fbfdff;}
+    .card-kicker{margin:0 0 7px 0;font-size:11px;line-height:1.4;letter-spacing:1.1px;text-transform:uppercase;font-weight:700;color:#4f46e5;}
+    .card h2{margin:0;font-size:21px;line-height:1.22;color:#111827;}
+    .card-sub{margin:10px 0 0 0;font-size:15px;line-height:1.5;color:#4b5563;}
+    .badges{margin:12px 0 0 0;}
+    .badge{display:inline-block;font-size:12px;line-height:1.2;font-weight:700;color:#3730a3;background:#eef2ff;border:1px solid #c7d2fe;border-radius:999px;padding:6px 9px;margin:0 4px 6px 0;}
+    .card-body{padding:16px;}
+    .fact{padding:10px 0;border-bottom:1px solid #edf2f7;}
+    .fact:first-child{padding-top:0;}
+    .fact-label{display:block;font-size:12px;line-height:1.35;text-transform:uppercase;letter-spacing:.8px;color:#2563eb;font-weight:700;margin:0 0 3px 0;}
+    .fact-value{display:block;font-size:14px;line-height:1.55;color:#1f2937;}
+    .analysis{background:#f8fafc;border-left:4px solid #6366f1;border-radius:0 12px 12px 0;padding:14px;margin:16px 0;}
+    .analysis p{margin:0;font-size:14px;line-height:1.62;color:#243044;}
+    .action{background:#ecfdf5;border:1px solid #bbf7d0;border-radius:13px;padding:13px;margin:0 0 16px 0;}
+    .action p{margin:0;font-size:14px;line-height:1.58;color:#064e3b;}
+    .button{display:block;width:100%;box-sizing:border-box;text-align:center;background:#2563eb;color:#ffffff!important;text-decoration:none;font-size:15px;line-height:1.25;font-weight:700;border-radius:12px;padding:14px;margin:9px 0 0 0;}
+    .note{background:#111827;color:#e5e7eb;border-radius:16px;padding:18px 16px;margin:16px 0 0 0;}
+    .note h2{margin:0 0 9px 0;font-size:21px;line-height:1.2;}
+    .note p,.note li{margin:0 0 10px 0;font-size:14px;line-height:1.62;color:#e5e7eb;}
+    .sources{background:#f8fafc;border:1px solid #dbe4ef;border-radius:16px;padding:16px;margin:16px 0 0 0;}
+    .sources h2{margin:0 0 9px 0;font-size:18px;line-height:1.2;color:#111827;}
+    .sources p{font-size:14px;line-height:1.55;color:#374151;margin:0;}
+    .footer{text-align:center;font-size:12px;line-height:1.5;color:#6b7280;padding:18px 18px 24px 18px;}
+    @media screen and (min-width:620px){.outer{padding:24px 0}.container{border:1px solid #dbe4ef;border-radius:18px;overflow:hidden}.hero{padding:30px 28px 26px 28px}.hero h1{font-size:32px}.meta{padding-left:28px;padding-right:28px}.content{padding:28px 28px 34px 28px}.card-top{padding:22px 22px 18px 22px}.card-body{padding:20px 22px 22px 22px}}
+  </style>
+</head>
+<body>
+  <div class="preheader">Resumen curado de software, arquitectura, diseño, IA y homelab.</div>
+  <div class="outer" style="width:100%;background:#eef2f7;padding:0;">
+    <div class="container" style="width:100%;max-width:560px;margin:0 auto;background:#ffffff;">
+      <div class="hero" style="background:#111827;color:#ffffff;padding:24px 18px 22px 18px;">
+        <p class="eyebrow" style="margin:0 0 10px 0;font-size:11px;line-height:1.4;letter-spacing:1.4px;text-transform:uppercase;color:#a7f3d0;font-weight:700;">Tech Radar · Software · AI · Homelab</p>
+        <h1 style="margin:0;font-size:27px;line-height:1.14;font-weight:800;">{{headline}}</h1>
+        <p style="margin:12px 0 0 0;font-size:16px;line-height:1.5;color:#d1d5db;">{{subtitle}}</p>
+      </div>
+      <div class="meta" style="background:#e0f2fe;padding:14px 18px;font-size:13px;line-height:1.55;color:#0f172a;border-bottom:1px solid #bae6fd;">
+        <strong>Fecha:</strong> {{date}}<br>
+        <strong>Rango:</strong> {{range}}<br>
+        <strong>Selección:</strong> {{signal_count}} señales técnicas<br>
+        <strong>Diversidad:</strong> {{source_count}} fuentes distintas
+      </div>
+      <div class="content" style="padding:20px 14px 26px 14px;">
+        <p class="label" style="margin:0 0 8px 0;font-size:11px;line-height:1.4;letter-spacing:1.2px;text-transform:uppercase;color:#2563eb;font-weight:700;">Resumen editorial</p>
+        <p class="lead" style="margin:0 0 16px 0;font-size:17px;line-height:1.55;color:#243044;">{{editorial_summary}}</p>
+
+        <div class="quick" style="background:#f8fafc;border:1px solid #dbe4ef;border-radius:14px;padding:15px;margin:0 0 18px 0;">
+          <h2 style="margin:0 0 10px 0;font-size:16px;line-height:1.3;color:#111827;">Esta edición, en breve</h2>
+          {{quick_items}}
+        </div>
+
+        {{cards}}
+
+        <div class="note" style="background:#111827;color:#e5e7eb;border-radius:16px;padding:18px 16px;margin:16px 0 0 0;">
+          <h2 style="margin:0 0 9px 0;font-size:21px;line-height:1.2;">Qué vale la pena probar esta semana</h2>
+          <ul style="padding-left:20px;margin:0;">{{weekly_actions}}</ul>
+        </div>
+
+        <div class="note" style="background:#111827;color:#e5e7eb;border-radius:16px;padding:18px 16px;margin:16px 0 0 0;">
+          <h2 style="margin:0 0 9px 0;font-size:21px;line-height:1.2;">Lectura rápida</h2>
+          <ul style="padding-left:20px;margin:0;">{{quick_read}}</ul>
+        </div>
+
+        <div class="sources" style="background:#f8fafc;border:1px solid #dbe4ef;border-radius:16px;padding:16px;margin:16px 0 0 0;">
+          <h2 style="margin:0 0 9px 0;font-size:18px;line-height:1.2;color:#111827;">Fuentes de esta edición</h2>
+          <p style="font-size:14px;line-height:1.55;color:#374151;margin:0;">{{sources}}</p>
+        </div>
+      </div>
+      <div class="footer" style="text-align:center;font-size:12px;line-height:1.5;color:#6b7280;padding:18px 18px 24px 18px;">Curaduría automática · Fuentes priorizadas: blogs oficiales, changelogs, documentación, repositorios, specs y papers originales.</div>
+    </div>
+  </div>
+</body>
+</html>
