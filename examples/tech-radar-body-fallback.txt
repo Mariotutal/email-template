@@ -1,0 +1,31 @@
+Tech Radar: Software, AI & Homelab
+
+Resumen editorial:
+Texto breve de la edición.
+
+Esta edición, en breve:
+1. Señal principal.
+2. Señal secundaria.
+3. Señal técnica relevante.
+
+Tema ejemplo:
+Título del tema
+Fuente original: nombre de la fuente
+Enlace: URL de la fuente
+Qué cambió: descripción breve.
+Análisis: lectura práctica.
+Impacto: efecto para equipos técnicos.
+Acción: recomendación concreta.
+
+Qué vale la pena probar esta semana:
+- Acción concreta 1.
+- Acción concreta 2.
+- Acción concreta 3.
+
+Lectura rápida:
+Frontend/Diseño: resumen breve.
+Backend/Arquitectura/DevOps: resumen breve.
+IA/Homelab: resumen breve.
+
+Fuentes de esta edición:
+Lista compacta de fuentes utilizadas.
