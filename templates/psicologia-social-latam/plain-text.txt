@@ -1,0 +1,75 @@
+Alerta semanal: Psicología Social LATAM – {{date}}
+
+Hola Sara,
+
+{{editorial_summary}}
+
+Rango revisado: {{review_range}}
+Selección final: exactamente 2 artículos
+Criterios aplicados: revisión por pares; prioridad a estudios empíricos; autores o muestras latinoamericanas; publicaciones en español, portugués o inglés.
+
+Esta semana, en breve:
+1. {{article_1_quick_title}}
+   {{article_1_quick_description}}
+
+2. {{article_2_quick_title}}
+   {{article_2_quick_description}}
+
+────────────────────────────
+ARTÍCULO 1
+────────────────────────────
+
+{{article_1_title}}
+
+Autores: {{article_1_authors}}
+Revista / año: {{article_1_journal}}, {{article_1_year}}
+Tipo / contexto: {{article_1_badge_1}} · {{article_1_badge_2}} · {{article_1_badge_3}}
+DOI / enlace: {{article_1_link}}
+PDF libre: {{article_1_pdf_url_or_note}}
+
+Abstract / resumen disponible:
+{{article_1_abstract}}
+
+Síntesis en español:
+Pregunta: {{article_1_question}}
+Método: {{article_1_method}}
+Hallazgo principal: {{article_1_finding}}
+Relevancia: {{article_1_relevance}}
+
+Por qué fue seleccionado esta semana:
+{{article_1_selection_reason}}
+
+────────────────────────────
+ARTÍCULO 2
+────────────────────────────
+
+{{article_2_title}}
+
+Autores: {{article_2_authors}}
+Revista / año: {{article_2_journal}}, {{article_2_year}}
+Tipo / contexto: {{article_2_badge_1}} · {{article_2_badge_2}} · {{article_2_badge_3}}
+DOI / enlace: {{article_2_link}}
+PDF libre: {{article_2_pdf_url_or_note}}
+
+Abstract / resumen disponible:
+{{article_2_abstract}}
+
+Síntesis en español:
+Pregunta: {{article_2_question}}
+Método: {{article_2_method}}
+Hallazgo principal: {{article_2_finding}}
+Relevancia: {{article_2_relevance}}
+
+Por qué fue seleccionado esta semana:
+{{article_2_selection_reason}}
+
+────────────────────────────
+NOTA DE COBERTURA
+────────────────────────────
+
+{{coverage_note}}
+
+Fuentes priorizadas: Google Scholar, SciELO, Redalyc, Revista Latinoamericana de Psicología, Interamerican Journal of Psychology y Revista de Psicología Social.
+
+Saludos,
+Mario
